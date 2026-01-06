@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+   <div class="container">
+
+    <!-- TOP NAVBAR -->
+    <nav class="nav-item">
+        <div class="top-left">
+            <span class="top-menu">About</span>
+            <span class="top-menu">Contact Us</span>
+            <span class="top-menu">More</span>
+        </div>
+
+        <div class="top-right">
+            <div class="profile-circle">P</div>
+            <img src="/html/data/cart2.jfif" width="30" height="30" alt="Cart">
+        </div>
+    </nav>
+
+    <!-- LOGIN CARD -->
+    <div class="bgcolor">
+        <div class="content">
+            <h2>Login</h2>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter Age">
+            </div>
+
+            <div class="form-group">
+                <label for="mobileno">Mobile No:</label>
+                <input type="text" id="mobileno" placeholder="Enter Mobile No">
+            </div>
+
+            <div class="form-group gender-group">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" placeholder="Enter Password">
+            </div>
+
+            <button class="btn" id="loginBtn">Login</button>
+        </div>
+    </div>
+
+</div>
+    <script src="/js/login.js"></script>
+</body>
+</html>

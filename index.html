@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- TOP NAVBAR -->
+    <nav class="nav-item">
+        <ul class="top-menu">
+            <li id="about">About</li>
+            <li id="contact">Contact Us</li>
+            <li id="more">More</li>
+        </ul>
+        <input type="text" id="search" placeholder="Search products...">
+        <button class="login" onclick="goToLogin()">Login</button>
+    </nav>
+
+    <!-- SECOND NAVBAR -->
+    <nav class="item">
+        <ul>
+            <li>Furniture</li>
+            <li>Women Dresses</li>
+            <li>Kids Wear</li>
+            <li>Casual Footwear</li>
+            <li>Formal Footwear</li>
+        </ul>
+    </nav>
+
+    <!-- PRODUCT CARDS -->
+    <div class="card">
+        <div class="inner-div" onclick="showProduct('Furniture')">
+            <img src="/data/furniture.jfif" alt="Furniture">
+            <p>Furniture</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Headset')">
+            <img src="/data/headset.jfif" alt="Headset">
+            <p>Headset</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Kids Wear')">
+            <img src="/data/kidboy.jfif" alt="Kids Wear">
+            <p>Kids Wear</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Kitchen Set')">
+            <img src="/data/kitc.jfif" alt="Kitchen Set">
+            <p>Kitchen Set</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Toys')">
+            <img src="/data/toys.jfif" alt="Toys">
+            <p>Toys</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Smartphone')">
+            <img src="/data/phone.webp" alt="Smartphone">
+            <p>Smartphone</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Kids Dress')">
+            <img src="/data/kidsdress.jfif" alt="Kids Dress">
+            <p>Kids Dress</p>
+            
+        </div>
+        <div class="inner-div" onclick="showProduct('Dining Set')">
+            <img src="/data/dinning.webp" alt="Dining Set">
+            <p>Dining Set</p>
+            
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+   
+</div>
+<script src="/js/index.js"></script>
+</body>
+</html>

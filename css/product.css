@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: lightcyan;
+    min-height: 100vh;
+}
+
+/* TOP NAVBAR */
+.nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 168, 172);
+    padding: 8px 20px;
+}
+
+.top-left{
+    display: flex;
+    gap: 20px;
+}
+
+.top-left .top-menu{
+    color: white;
+    cursor: pointer;
+}
+
+.top-left .top-menu:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.top-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* SECOND NAVBAR */
+.item{
+    background-color: rgb(79, 160, 161);
+}
+
+.item ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.item ul li{
+    cursor: pointer;
+}
+
+.item ul li:hover{
+    background-color: white;
+}
+
+/* PRODUCT CARD */
+.product-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    width: 90%;
+    background-color: rgb(23,212,203);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.product-info h2{
+    color: white;
+}
+
+.price{
+    font-weight: bold;
+    color: white;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity input{
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.quantity button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+}
+
+.quantity button:hover{
+    background-color: rgb(120,168,168);
+}
+
+#addCart{
+    width: 150px;
+    padding: 8px;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addCart:hover{
+    background-color: rgb(120,168,168);
+}
+
+/* FOOTER */
+/* FOOTER FIXED */
+.footer{
+    width: 100%;
+    background-color: rgb(79, 160, 161);
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-nav li{
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-nav li:hover{
+    background-color: white;
+    color: black;
+}

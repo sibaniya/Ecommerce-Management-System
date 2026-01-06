@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- TOP NAVBAR -->
+    <nav class="nav-item">
+        <div class="top-left">
+            <span class="top-menu" id="aboutBtn">About</span>
+            <span class="top-menu" id="contactBtn">Contact Us</span>
+            <span class="top-menu">More</span>
+        </div>
+
+        <!-- About Modal -->
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>About Our Ecommerce Site</h2>
+        <p>
+            Welcome to Siba Ecommerce! We provide a wide range of products including electronics, fashion, home decor, toys, and more. Our platform is designed for a seamless shopping experience with easy navigation, secure checkout, and fast delivery.
+        </p>
+    </div>
+</div>
+
+<!-- Contact Us Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Us</h2>
+        <p>
+            You can reach us at: <br>
+            Email: support@kjmecommerce.com <br>
+            Phone: +91 9876543210 <br>
+            Address: 123, KJM Street, YourCity, India
+        </p>
+    </div>
+</div>
+
+         
+        <input type="text" id="search" placeholder="Search...">
+
+        <div class="top-right">
+            <div class="profile-circle">P</div>
+            <img src="/data/cart2.jfif" width="30px" height="30px">
+        </div>
+    </nav>
+
+    <!-- SECOND NAV (CATEGORY NAVBAR) -->
+    <nav class="item">
+        <ul>
+            <li>Dresses</li>
+            <li>Furniture</li>
+            <li>Toys</li>
+            <li>Kitchen</li>
+            <li>Footwear</li>
+            <li>Beauty</li>
+            <li>Electronics</li>
+            <li>Home Decor</li>
+            <li>Books</li>
+        </ul>
+    </nav>
+
+    <!-- PRODUCT CARDS -->
+    <div class="card">
+        <div class="inner-div" data-name="Phone" data-price="₹15,000">
+            <img src="/data/phone.webp">
+            <div class="prod-info">
+                <p class="prod-name">iPhone</p>
+                <p class="prod-price">₹65,000</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Shirt" data-price="₹1,200">
+            <img src="/data/shirt.jpg">
+            <div class="prod-info">
+                <p class="prod-name">Shirt</p>
+                <p class="prod-price">₹1,200</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Headset" data-price="₹2,200">
+            <img src="/data/headset.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Headset</p>
+                <p class="prod-price">₹2,200</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Kitchen Set" data-price="₹3,500">
+            <img src="/data/kitchen.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Kitchen Set</p>
+                <p class="prod-price">₹3,500</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Kid Boy Dress" data-price="₹900">
+            <img src="/data/kidboy.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Kid Boy Dress</p>
+                <p class="prod-price">₹900</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Book" data-price="₹500">
+            <img src="/data/book.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Book</p>
+                <p class="prod-price">₹1011</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Furniture" data-price="₹12,000">
+            <img src="/data/furniture.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Furniture</p>
+                <p class="prod-price">₹12,000</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Toy" data-price="₹700">
+            <img src="/data/toy.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Toy</p>
+                <p class="prod-price">₹400</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Sofa" data-price="₹18,000">
+            <img src="/data/sofa.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Sofa</p>
+                <p class="prod-price">₹55,000</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Toys" data-price="₹800">
+            <img src="/data/toys.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Toys</p>
+                <p class="prod-price">₹800</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Kids Dress" data-price="₹1,100">
+            <img src="/data/kidsdress.jfif">
+            <div class="prod-info">
+                <p class="prod-name">Kids Dress</p>
+                <p class="prod-price">₹1,100</p>
+            </div>
+        </div>
+        <div class="inner-div" data-name="Dinning Set" data-price="₹9,500">
+            <img src="/data/dinning.webp">
+            <div class="prod-info">
+                <p class="prod-name">Dinning Set</p>
+                <p class="prod-price">₹17,500</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <ul class="footer-nav">
+            <li>Home</li>
+            <li>Product</li>
+            <li>Category</li>
+            <li>Add to Cart</li>
+            <li>Order</li>
+        </ul>
+    </footer>
+
+</div>
+
+<!-- PRODUCT POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popupImg">
+    </div>
+</div>
+    <script src="/js/home.js"></script>
+</body>
+</html>

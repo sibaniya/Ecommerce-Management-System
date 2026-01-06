@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #FFFFFF; /* soft background */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* TOP NAVBAR */
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #285F6B; /* dark teal */
+    padding: 12px 25px;
+}
+
+.top-left {
+    display: flex;
+    gap: 25px;
+}
+
+.top-left .top-menu {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.top-left .top-menu:hover {
+    color: #367D8A; /* lighter teal hover */
+    text-decoration: underline;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #367D8A; /* lighter teal */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.profile-circle:hover {
+    background-color: #285F6B; /* dark teal hover */
+}
+
+/* LOGIN CARD */
+.bgcolor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #eaeaea; /* soft gray background */
+}
+
+.content {
+    width: 350px;
+    padding: 30px 25px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.content h2 {
+    margin-bottom: 25px;
+    color: #010001; /* dark text */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #133336;
+}
+
+.form-group input {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #285F6B;
+    margin-top: 5px;
+    outline: none;
+}
+
+.gender-group .gender-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #285F6B;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #FFFFFF;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #367D8A;
+    color: #010001;
+}
