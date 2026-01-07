@@ -26,6 +26,15 @@ closeBtn.addEventListener("click", () => {
     aboutModal.style.display = "none";
 });
 
+function goToProfile(){
+    window.location.href = "profile.html";
+}
+
+function goToDresses(){
+    window.location.href = "dresses.html";
+}
+
+
 // Click outside modal closes
 window.addEventListener("click", (e) => {
     if(e.target == aboutModal){
@@ -77,3 +86,22 @@ document.querySelectorAll(".top-left .top-menu").forEach(item => {
         alert(item.innerText + " clicked");
     });
 });
+
+document.querySelectorAll(".add-cart").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+        alert("Product added to cart 🛒");
+    });
+});
+
+// Optional: Top menu clicks
+document.getElementById("about").onclick = function(){
+    alert("About Us: This is our ecommerce website.");
+}
+
+document.getElementById("contact").onclick = function(){
+    alert("Contact Us: Email us at ecommercesupport@gmail.com");
+}
+
+document.getElementById("more").onclick = function(){
+    alert("More Info: Check our latest offers and collections!");
+}

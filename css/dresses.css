@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f2f6f7;
+}
+
+/* NAVBAR */
+.nav-item{
+    background: linear-gradient(90deg, #285F6B, #367D8A);
+    padding: 15px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item button{
+    padding: 6px 12px;
+    border: none;
+    background: white;
+    color: #285F6B;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* DRESS GRID */
+.dress-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.dress-card{
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.dress-card:hover{
+    transform: translateY(-6px);
+}
+
+.dress-card img{
+    width: 100%;
+    height:140px;
+    border-radius: 12px;
+}
+
+.dress-card p{
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.dress-card span{
+    color: green;
+    font-weight: bold;
+}
+
+.dress-card button{
+    margin-top: 8px;
+    padding: 6px;
+    width: 100%;
+    border: none;
+    background: #285F6B;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dress-card button:hover{
+    background: #133336;
+}

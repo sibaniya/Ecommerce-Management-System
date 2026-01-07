@@ -43,6 +43,39 @@ body, html {
     color: #367D8A; /* lighter teal hover */
 }
 
+.menu-item{
+    position: relative;
+}
+
+.hover-box{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 100;
+    font-size: 13px;
+}
+
+/* show on hover */
+.menu-item:hover .hover-box{
+    display: block;
+}
+
+.hover-box p{
+    margin-bottom: 6px;
+}
+
+.hover-box p:last-child{
+    margin-bottom: 0;
+}
+
+
 /* SEARCH BOX */
 .nav-item input[type="text"] {
     padding: 6px 10px;

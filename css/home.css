@@ -1,46 +1,45 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-html, body{
-    height: 100%;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .container{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: lightcyan;
-    width: 100%;
-    min-height: 100vh;
+    background-color: #F4FAFB;
 }
 
-/* ================= TOP NAVBAR ================= */
+/* TOP NAV */
 .nav-item{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: rgb(74, 168, 172);
-    padding: 6px 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    align-items: center;
+    padding: 12px 24px;
+    background: linear-gradient(90deg,#133336,#285F6B);
 }
 
 .top-left{
     display: flex;
-    gap: 20px;
+    gap: 22px;
 }
 
-.top-left .top-menu{
-    color: white;
+.top-menu{
+    color: #fff;
     cursor: pointer;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-weight: 500;
 }
 
-.top-left .top-menu:hover{
-    color: black;
+.top-menu:hover{
     text-decoration: underline;
+}
+
+.nav-item input{
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
 }
 
 .top-right{
@@ -50,202 +49,142 @@ html, body{
 }
 
 .profile-circle{
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    background-color: darkcyan;
-    color: white;
+    background-color: #367D8A;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
 }
 
-.profile-circle:hover{
-    background-color: rgb(120,168,168);
-}
-
-.nav-item input[type="text"]{
-    padding: 4px 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 180px;
-}
-
-/* MODAL POPUP */
-.modal {
-    display: none;           /* hidden by default */
-    position: fixed;
-    z-index: 200;            /* above everything */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5); /* semi-transparent background */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: black;
-}
-
-
-/* ================= SECOND NAV (CATEGORY) ================= */
+/* CATEGORY */
 .item{
-    background-color: rgb(79, 160, 161);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+    background-color: #285F6B;
 }
 
 .item ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 10px;
 }
 
-.item ul li{
+.item li{
+    color: white;
     cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 5px;
-    transition: background 0.2s ease;
 }
 
-.item ul li:hover{
-    background-color: white;
+.item li:hover{
+    text-decoration: underline;
 }
 
-/* ================= PRODUCT CARDS ================= */
+/* PRODUCTS */
 .card{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    gap: 10px;
+    gap: 22px;
+    padding: 30px;
 }
 
 .inner-div{
-    width: 120px;
-    background-color: rgb(23, 212, 203);
-    margin: 15px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    cursor: pointer;
-    padding-bottom: 10px;
+    width: 170px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
 .inner-div:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    transform: translateY(-6px);
 }
 
 .inner-div img{
     width: 100%;
-    height: 140px;
-    border-radius: 10px 10px 0 0;
+    height: 150px;
+    object-fit: cover;
 }
 
 .prod-info{
     text-align: center;
-    margin-top: 5px;
+    padding: 10px;
 }
 
 .prod-name{
     font-weight: bold;
-    font-size: 14px;
+    color: #133336;
 }
 
 .prod-price{
-    color: darkgreen;
-    font-size: 13px;
-    margin-top: 2px;
+    color: #285F6B;
+    margin: 4px 0;
 }
 
-/* ================= FOOTER ================= */
+.add-cart{
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg,#285F6B,#367D8A);
+    color: white;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background: #133336;
+}
+
+/* FOOTER */
 .footer{
-    width: 100%;
-    background-color: rgb(79, 160, 161);
-    padding: 10px 0;
+    background-color: #133336;
     margin-top: auto;
+    padding: 12px 0;
 }
 
 .footer-nav{
     display: flex;
-    list-style: none;
     justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
+    list-style: none;
 }
 
 .footer-nav li{
-    cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 4px;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-.footer-nav li:hover{
-    background-color: white;
-    color: black;
-}
-
-/* ================= PRODUCT POPUP ================= */
-.popup{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content{
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    animation: popupAnim 0.3s ease;
-}
-
-.popup-content img{
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-}
-
-.close{
-    float: right;
-    font-size: 22px;
+    color: white;
     cursor: pointer;
 }
 
-@keyframes popupAnim{
-    from {transform: scale(0.8); opacity: 0;}
-    to {transform: scale(1); opacity: 1;}
+.footer-nav li a{
+    text-decoration: none;      /* underline remove */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
 }
+
+/* hover effect */
+.footer-nav li a:hover{
+    background-color: #FFFFFF;
+    color: #285F6B;
+    transform: translateY(-2px);
+}
+
+/* click (active) effect */
+.footer-nav li a:active{
+    background-color: #367D8A;
+    color: white;
+}
+
+/* focus underline remove (extra safety) */
+.footer-nav li a:focus{
+    outline: none;
+    text-decoration: none;
+}
+

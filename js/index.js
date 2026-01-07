@@ -15,7 +15,7 @@ document.getElementById("about").onclick = function(){
 }
 
 document.getElementById("contact").onclick = function(){
-    alert("Contact Us: Email us at support@example.com");
+    alert("Contact Us: Email us at ecommercesupport@gmail.com");
 }
 
 document.getElementById("more").onclick = function(){
